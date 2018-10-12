@@ -1,0 +1,9 @@
+Sum: main.0 Sum.o
+	gcc -c Sum.exe main.o sum.o
+	
+	
+Sum.o: Sum.c Sum.h
+	gcc -c Sum.c
+	
+main.o: main.c Sum.h
+	gcc -c main.c
